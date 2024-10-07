@@ -110,7 +110,7 @@ pipeline {
 
     post {
         always {
-            echo 'Post: DockerHub URL...'
+            echo 'Post: DockerHub URL....'
             script {
                 def dockerHubUrl = "https://hub.docker.com/r/${DOCKER_REPO}/tags?name=${IMAGE_TAG}"
                 echo "DockerHub URL for the build: ${dockerHubUrl}"
