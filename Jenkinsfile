@@ -118,7 +118,7 @@ pipeline {
             }
         }
         success {
-            echo 'Build successful, pushing the image as latest...'
+            echo 'Build successful, pushing the image as latest....'
             container('docker') {
                 script {
                     docker.withRegistry('', "${DOCKER_CREDENTIALS_ID}") {
